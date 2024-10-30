@@ -1,0 +1,310 @@
+@import url(./partials/_variables.css);
+@import url(./fonts.css);
+@import url(./partials/_global.css);
+
+.video-fundo {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    z-index: -1; 
+}
+
+@media (max-width: 768px) {
+    .site-main .about-area {
+        padding: 2rem 1rem;
+    }
+    .site-main .about-area .about-title h2 > span {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .paragraph {
+        width: 100%;
+    }
+    .site-main .brand-area {
+        padding: 1rem 2rem;
+    }
+}
+
+
+.video-fundo video {
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover; 
+}
+
+p{
+    background-color: #1f87bb; 
+    border: 1px solid #1f87bb; 
+    border-radius: 8px; 
+    padding: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    color: #ffffff;
+    transition: transform 0.3s, border-color 0.3s; 
+}
+
+p:hover {
+    transform: scale(1.05); 
+    border-color: #007BFF; 
+}
+
+.card-text .text-secundary {
+    color: #ffffff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.modal-content {
+    background-color: #1f87bb; 
+    color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; 
+    max-width: 500px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #fff; 
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffd600; 
+    text-decoration: none;
+    cursor: pointer;
+} -->
+
+.site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: #1f87bb;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-title h1{
+    font-size: 3rem;
+}
+
+.site-title h4{
+    font-size: 1.5rem;
+}
+
+.banner-image > img{
+    padding: 7rem 0;
+    width: 40rem;
+}
+
+.title-text{
+    font: normal bold 50px/72px var(--roboto);
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1f87bb;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #0028da; 
+}
+
+.secundary-button{
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1f87bb;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;  
+}
+
+.footer-icons{
+    display: flex;
+    gap: 8px;
+    color: #000000;
+}
+
+.secundary-button:hover {
+    background-color: #0028da; 
+}
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+.site-main .brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease; 
+    color: #ffffff;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
+    width: 50%;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img{
+    filter: brightness(0.15);
+}
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+    background-color: #e029290a;
+}
+
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+
+.site-main .brand-area .experience-area h2 > span{
+    padding-left: 2rem;
+}
+
+.site-main .brand-area .experience-area .years-area {
+    background:rgba(31, 135, 187, 0.5) url(../img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 4rem;
+    position: relative;
+}
+
+.site-main .brand-area .experience-area .years-area .years{
+    font: normal bold 84px/40px var(--roboto);
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.site-main .brand-area .experience-area .years-area h2 > span{
+    font: normal 600 22px/30px var(--roboto);
+    margin-left: 50px;
+}
+
+.site-main .brand-area .experience-area .call-now{
+    padding-left: 10rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 0rem 13rem;
+}
+
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+    letter-spacing: 12px;
+}
+
+.site-main .services-area .services-title .services{
+    background: rgb(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main .services-area .services-title .services:hover{
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.services{
+    max-width: 100%; 
+    height: auto;
+    transition: transform 0.3s, border-color 0.3s; 
+}
+
+.services:hover {
+    transform: scale(1.05); 
+    border-color: #007BFF; 
+}
+
+.foto{
+    max-width: 100%; 
+    height: auto;
+    transition: transform 0.3s, border-color 0.3s; 
+}
+
+.foto:hover {
+    transform: scale(1.05); 
+    border-color: #007BFF; 
+}
+
+footer.footer-area{
+    padding: 5rem 0;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/30px (var(--roboto));
+}
+
+footer.footer-area .social a > i{
+    font-size: 45px;
+    padding: 1rem;
+    color: var(--border-color);
+    color: #fff;
+}
+
+footer.footer-area .social a:hover{
+    color: var(--border-color);
+}

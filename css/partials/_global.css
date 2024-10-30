@@ -1,0 +1,9 @@
+.title-text{
+	font: normal bold 50px/72px var(--roboto);
+}
+
+
+p.parag{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}

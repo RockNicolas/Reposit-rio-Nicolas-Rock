@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="./css/computador.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/5741483.png ">
+
+    <title>setup</title>
+</head>
+<body>
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="video-fundo">
+                <video autoplay muted loop>
+                    <source src="/img/23354-334950206.mp4" type="video/mp4">
+                </video>
+              </div> 
+            <div class="slider-img">
+                <img src="img/braços.png" alt="1" />
+                <h1>Braços</h1>
+                <div class="details">
+                  <h2>Braços Articulados</h2>
+                  <p>PIX Suporte 2 Monitores 17 a 27 Articulado com Pistão a Gás F160 NB</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/k569rgb-1_pt-blue11001206(1).png" alt="2" />
+                <h1>Teclado</h1>
+                <div class="details">
+                  <h2>Aryaman</h2>
+                  <p>Teclado Mecanico Redragon Aryaman RGB USB Switch Azul, K569RGB-1-PT-BLUE</p>
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img src="img/monitor 1.png" alt="4" />
+                <h1>Monitor</h1>
+                <div class="details">
+                  <h2>Monitor</h2>
+                  <p>Monitor Gamer Curvo Duex DX 270ZG, 27", Full HD (1920x1080), 240Hz, Preto</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/mouse(2).png" alt="5" />
+                <h1>Mouse</h1>
+                <div class="details">
+                  <h2>attack shark x3</h2>
+                  <p>Mouse para jogos sem fio ATTACK SHARK X3, Mouses Gamer (Branco)</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/monitor 2(2).png" alt="6" />
+                <h1>Monitor</h1>
+                <div class="details">
+                  <h2>Monitor Secundario</h2>
+                  <p>Monitor Lenovo 21.5 IPS, Wide, Full HD, HDMI/DisplayPort/VGA, VESA, Ajuste de Ângulo - 61A9MHR1BR</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/fone2.png" alt="7" />
+                <h1>headset</h1>
+                <div class="details">
+                  <h2>headset Zeus</h2>
+                  <p>Headset Gamer Redragon Zeus X RGB USB 7.1 Surround Sound Virtual H510-RGB, Preto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+            jQuery(document).ready(function ($) {
+              $(".slider-img").on("click", function () {
+                $(".slider-img").removeClass("active");
+                $(this).addClass("active");
+              });
+            });
+    </script>
+</body>
+</html>      
